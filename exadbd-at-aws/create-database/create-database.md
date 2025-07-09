@@ -2,30 +2,33 @@
 
 ## Introduction
 
-This lab walks you through the steps to provision exadata cloud infrastructure, create a Vm cluster from AWS interface and then deploy container database (CDB) and plugable database (PDB) from OCI console. 
-
+This lab walks you through the steps to provision an Oracle Database from OCI console. 
 
 Estimated Time:  30 Minutes
 
-
 ### Objectives
+
 In this lab, you will learn to :
+
 * Create Oracle Database on Exadata Database Service@AWS
 
 ### Prerequisites  
 
 This lab assumes you have:
-- Created Oracle Exadata Cloud Infrastructure resource
-- Created Oracle Exadata VM Cluster resource
+
+- Created Oracle Exadata Cloud Infrastructure
+- Created Oracle Exadata VM Cluster
 
 
-##  Task 1: Deploy CDB and PDB Database
-1. Login to AWS Portal (https://portal.AWS.com) and navigate to All services. Then click on **Oracle Database@AWS**.
-    Navigate to **Oracle Exadata Database Service** and select Exadata Infrastructure and then click on the VM Cluster resource created in Lab 3.
-    Then click on **Go to OCI** hyperlink. 
-    It will open OCI cloud console.
+##  Task 1: Provision Oracle Database
 
-    ![](./images/deploy_db_image1.png " Navigation")
+1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
+
+2. From the left pane, choose **Exadata VM clusters**.
+
+3. Select the VM cluster that was created in previous lab - **my-vm-cluster**.
+
+4. Click **Manage in OCI** to be redirected to the Oracle Cloud Infrastructure console.
 
 2. On OCI cloud console, scroll down to **Databases** tab and click on **Create database** button.
     It will open a window to create a new database deploymnet - CDB and PDB.
@@ -103,15 +106,10 @@ This lab assumes you have:
 
     ![](./images/deploy_db_image15.png "Provisioing completed ")
 
-
-You may now **proceed to the next lab**.
-
 ## Learn More
-- You can find more information about Oracle Exadata Database @AWS [here](https://docs.oracle.com/en-us/iaas/Content/multicloud/oaa.htm)
 
-
+- You can find more information about Oracle Exadata Database@AWS [here](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
 
 ## Acknowledgements
-* **Author** - Sanjay Rahane, Principal Cloud Architect, North America Cloud Engineering
-* **Contributors** -  Bhaskar Sudarshan, Director, North America Cloud Engineering
-* **Last Updated By/Date** - Sanjay Rahane, August 2024
+* **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
+* **Last Updated By/Date** - Vivek Verma, July 2025
