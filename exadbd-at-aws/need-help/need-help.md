@@ -20,8 +20,6 @@ This will construct an email in your default mail application that is auto popul
 3. Include the **Lab Number**, **Step Number**, and **Sub-Step Number** where you've encounter the issue.
 4. Attach a **Screenshot** and **Any Troubleshooting Steps** you've tried so we can recreate the issue and provide a timely and accurate solution.
 
-
-## Acknowledgements
 ## Acknowledgements
 * **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
 * **Last Updated By/Date** - Vivek Verma, July 2025
