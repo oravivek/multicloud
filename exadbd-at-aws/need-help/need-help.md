@@ -22,6 +22,6 @@ This will construct an email in your default mail application that is auto popul
 
 
 ## Acknowledgements
-* **Author** - Sanjay Rahane, Principal Cloud Architect, North America Cloud Engineering
-* **Contributors** -  Bhaskar Sudarshan, Director, North America Cloud Engineering
-* **Last Updated By/Date** - Sanjay Rahane, August 2024
+## Acknowledgements
+* **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
+* **Last Updated By/Date** - Vivek Verma, July 2025
