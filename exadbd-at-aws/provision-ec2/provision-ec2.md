@@ -10,6 +10,7 @@ Estimated Time:  45 Minutes
 
 In this lab, you will learn to :
 
+* Configure DNS in AWS
 * Create an AWS EC2 instance
 * Connect to Oracle Database@AWS
 
@@ -25,9 +26,14 @@ This lab assumes you have:
 
 1. Configure DNS in AWS to connect to Oracle Database@AWS using the Fully Qualified Domain Name (FQDN) for Scan and Virtual Machine (VM Cluster). 
 
-*If you do not configure DNS you can not perform Task 2 and Task 3 using the FQDN for Scan and VM. You have to perform that using the IP address of the VM.*
+    *If you do not configure DNS you can not perform Task 2 and Task 3 using the FQDN for Scan and VM. You have to perform that using the IP address of the VM.*
 
-https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html#configuring-dns
+    Refer to the official AWS documentation on [Configuring DNS for Oracle Database@AWS](https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html#configuring-dns).
+
+2. Following above documentation perform **Configuring an outbound endpoint in an ODB network in Oracle Database@AWS**
+
+3. Follow **Configuring a resolver rule in Oracle Database@AWS**.
+
 
 ##  Task 2: Connect to Oracle Database@AWS
 
