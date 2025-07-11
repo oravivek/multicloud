@@ -14,18 +14,23 @@
     },
     {
       "title": "Lab 2: Create Oracle Exadata Infrastructure",
-      "description": "Step by step instruction on creating a Secure Block Volume",
+      "description": "Step by step instruction to Create Oracle Exadata Infrastructure",
       "filename": "../../provision-exadata-infra/provision-exadata-infra.md"
     },
     {
       "title": "Lab 3: Create Oracle Exadata VM Cluster",
-      "description": "Step by step instruction on creating a Secure Virtual Machine Instance",
+      "description": "Step by step instruction to Create Oracle Exadata VM Cluster",
       "filename": "../../provision-vm-cluster/provision-vm-cluster.md"
     },
     {
       "title": "Lab 4: Create Oracle Database on Exadata Database Service@AWS",
-      "description": "Step by step instruction on creating a Secure Virtual Machine Instance",
+      "description": "Step by step instruction to Create Oracle Database on Exadata Database Service@AWS",
       "filename": "../../create-database/create-database.md"
+    },
+    {
+      "title": "Lab 5: Create EC2 instance and connect to Oracle DB@AWS",
+      "description": "Step by step instruction to Create EC2 instance and connect to Oracle DB@AWS",
+      "filename": "../../provision-ec2/provision-ec2.md"
     },
     {
       "title": "Need Help?",
