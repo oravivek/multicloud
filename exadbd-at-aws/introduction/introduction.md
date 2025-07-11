@@ -23,6 +23,7 @@ In this workshop, you will learn how to:
 * Step 3. Create Oracle Exadata Infrastructure through AWS Console
 * Step 4. Create Oracle Exadata VM Cluster through AWS Console
 * Step 5. Create Oracle Database on an Exadata Database Service@AWS
+* Step 6. Connect to Oracle Database@AWS
 
 
 ## Prerequisites
