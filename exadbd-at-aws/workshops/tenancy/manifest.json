@@ -8,6 +8,11 @@
       "filename": "../../introduction/introduction.md"
     },
     {
+      "title": "Get Started",
+      "description": "Get started - Oracle Database@AWS",
+      "filename": "../../get-started/get-started.md"
+    },
+    {
       "title": "Lab 1: Create VPC and ODB Network for Oracle Database@AWS",
       "description": "Step by step instruction on creating a VPC and ODB Network",
       "filename": "../../prerequisite-steps/pre-requisites-steps.md"
