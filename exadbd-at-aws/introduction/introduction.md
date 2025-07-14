@@ -8,13 +8,13 @@ Customers can easily and quickly migrate their workloads with minimal or no data
 
 When you implement this solution, you deploy resources in two cloud environments: database resources are in AWS, while the database administration control plane is in Oracle Cloud Infrastructure (OCI). This lets you deploy Oracle Database products in your AWS environment while OCI maintains the administration capabilities.
 
+Estimated Workshop Time: 2 Hours 30 Minutes
+
 ## Workshop Objectives
 
 This hands-on workshop provides users with step-by-step instructions on provisioning Oracle Exadata Database@AWS. It provides detailed technical steps about pre-requisites steps and preparation needed for creating an Oracle Exadata infrastructure and Oracle Exadata VM Cluster and then create CDBs and PDBs. 
 
 Oracle Exadata Database @AWS helps to run Oracle Database natively in AWS with the highest levels of performance, availability, security, and cost-effectiveness available in the cloud.
-
-Estimated Workshop Time: 2 Hours 30 Minutes
 
 In this workshop, you will learn how to:
 
