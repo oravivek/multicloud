@@ -24,16 +24,74 @@ This lab assumes you have:
 
 ## Task 1: Configure DNS in AWS
 
-1. Configure DNS in AWS to connect to Oracle Database@AWS using the Fully Qualified Domain Name (FQDN) for Scan and Virtual Machine (VM Cluster). 
+1. Configure **DNS Resolution**
 
-    *If you do not configure DNS you can not perform Task 2 and Task 3 using the FQDN for Scan and VM. You have to perform that using the IP address of the VM.*
+    This section enables apps (EC2, Lambda, ECS etc) to connect to the Oracle database using its Fully Qualified Domain Name (FQDN). As part of this configuration, outbound endpoints will be created in Amazon Route 53 to facilitate DNS resolution.
 
-    Refer to the official AWS documentation on [Configuring DNS for Oracle Database@AWS](https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html#configuring-dns).
+2. Create **Output Endpoint** in **Route 53**.
 
-2. Following above documentation perform **Configuring an outbound endpoint in an ODB network in Oracle Database@AWS**
+    - Launch the **Route 53** console at https://console.aws.amazon.com/route53/.
 
-3. Follow **Configuring a resolver rule in Oracle Database@AWS**.
+    - From the left pane, select **Outbound Endpoints** under the **Route 53 Resolver** section.
 
+        ![Outbound Endpoint](./images/outbound-endpoints-left-pane.png " ")
+
+    - Click **Create Outbound Endpoint** and enter the following:
+
+        ![Outbound Endpoint](./images/create-outbound-endpoint.png " ")
+        
+        ![Outbound Endpoint](./images/create-outbound-endpoint-ip.png " ")
+
+        * **Endpoint Name** - Name of the Endpoint - *myOutboundEndpoint*
+        * **VPC** - choose the VPC that is peered with ODB network - *project-vpc*
+        * **Security Group** - Select the correct Security Group under that VPC.
+            
+            The Security Group should have following rules -
+            * Set inbound rules to allow TCP and UDP port 53 from the CIDR blocks of all VPCs associated with the resolver rule. 
+            * Set outbound rules to allow TCP and UDP port 53 to the target DNS Listener IP, or to 0.0.0.0/0
+
+        * **Endpoint Type** - *IPV4*
+        * **Protocol** - *Do53*
+        * In **IP addresses**, provide the following information:
+        
+            * Select the same **Availability Zone** where the ODB Network is provisioned - *us-east-1b*
+            * For **Subnet**, choose subnets that has Route tables that include routes to the IP addresses of the DNS listener on ODB network. Select the Public Subnet that has the routes to ODB Network. 
+
+        * Click **Create outbound endpoint**.
+        
+3. Create a **Resolver Rule** for DNS Forwarding
+    
+    After creating the Outbound Resolver Endpoint, create a Resolver Rule to forward DNS queries:
+        
+    - From the left pane on the **Route 53** console, choose **Rules** and click **Create rule**.
+
+    - Complete the **Rule for outbound traffic** sections as follows:
+
+        ![Outbound Endpoint](./images/resolver-create-rule.png " ")
+
+        ![Outbound Endpoint](./images/resolver-create-rule-ip.png " ")
+
+        * **Name**: *myRule* 
+        
+        * **Rule type**: *Forward*
+
+        * **Domain name**: Specify the full domain name from ODB network
+
+        * **VPCs that use this rule**: Associate it with the VPC from where DNS queries are forwarded to your ODB network - *project-vpc*
+
+        * **Outbound endpoint**: Choose the outbound endpoint that you created in Task 2 - *myOutboundEndpoint*
+
+    - Complete the **Target IP addresses** section as follows:
+
+        * **IP address**: Specify the IP address of the DNS listener IP on your ODB network.
+
+        * **Port**: *53*
+
+            *The Route 53 Resolver forwards DNS queries that match this rule and originate from a VPC associated with this rule to the referenced outbound endpoint. These queries are forwarded to the target IP addresses that you specify in the Target IP addresses.*
+
+        * **Transmission protocol**: *Do53*
+        
+        * Click **Submit**.
 
 ##  Task 2: Connect to Oracle Database@AWS
 
@@ -108,6 +166,8 @@ You can download SQLcl from https://download.oracle.com/otn_software/java/sqldev
 ## Learn More
 
 - You can find more information about Oracle Exadata Database@AWS [here](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
+- Refer to the official AWS documentation on [Configuring DNS for Oracle Database@AWS](https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html#configuring-dns).
+
 
 ## Acknowledgements
 * **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering

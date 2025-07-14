@@ -118,7 +118,7 @@ An ODB network is a private isolated network that hosts OCI infrastructure on AW
 
 1. After creating an ODB peering connection, configure your Amazon VPC route tables to route traffic to the peered ODB network. For more information, see [Configuring VPC route tables for ODB peering](https://docs.aws.amazon.com/odb/latest/UserGuide/configuring.html#configure-routes).
 
-2. To update a route table, use the AWS CLI ec2 *create-route command*. The following examples updates Amazon VPC route tables.
+2. To update a route table, use the AWS CLI ec2 *create-route command*. The following example updates Amazon VPC route tables.
 
 ```
 <copy>
@@ -129,8 +129,16 @@ aws ec2 create-route \
 </copy>
 ```
 
-- For --route-table-id use the Route Table ID for Route Table associated with the Public Subnet that was created in Task 1.
+- For *--route-table-id* use the Route Table ID for Route Table associated with the Public Subnet that was created in Task 1.
+
+   ![](./images/app-vnc-for-route.png "VPC for Routing")
+
+   ![](./images/route-table-for-public.png "Route Table for Public Subnet")
+
 - For destination-cidr-block use the **Client Subnet CIDR** of the ODB Network created in Task 2.
+
+   ![](./images/odb-network-cidr-arn.png "VPC for Routing")
+
 - For odb-network-arn use the ARN for the ODB Network created in Task 2.
 
 You may now **proceed to the next lab**.
