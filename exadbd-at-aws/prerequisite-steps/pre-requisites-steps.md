@@ -92,7 +92,7 @@ An ODB network is a private isolated network that hosts OCI infrastructure on AW
 
    ![](./images/create-odb-network2.png "Create ODB Network")
 
-10. Verify when the ODB Network status is *Available*.
+10. Verify when the ODB Network status is *Available*. Note down the **DNS listener IP** for Lab 5.
 
    ![](./images/odb-network-status.png "ODB Network")
 
