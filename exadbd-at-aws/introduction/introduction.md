@@ -25,7 +25,6 @@ In this workshop, you will learn how to:
 * Step 5. Create Oracle Database on an Exadata Database Service@AWS
 * Step 6. Connect to Oracle Database@AWS
 
-
 ## Prerequisites
 
 * Familiarity with Oracle Cloud Infrastructure (OCI) is helpful
@@ -39,8 +38,7 @@ Find more details on getting started [Onboarding with Oracle Database@AWS](https
 
 ## Learn More
 
-- You can find more information about Oracle Exadata Database@AWS [here](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
-
+* Official documentation on [Oracle Exadata Database@AWS](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
 
 ## Technical support
 
@@ -49,5 +47,6 @@ For all OCI related issues, Oracle Cloud Support is the first line of support. F
 For all AWS related issues and questions. Get help in the **Exper Help** section and support from **Support Center** from the AWS Console.
 
 ## Acknowledgements
+
 * **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
 * **Last Updated By/Date** - Vivek Verma, July 2025

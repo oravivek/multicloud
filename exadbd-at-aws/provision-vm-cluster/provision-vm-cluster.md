@@ -7,6 +7,7 @@ This lab walks you through the steps to provision Exadata VM Cluster from AWS Co
 Estimated Time:  45 Minutes
 
 ### Objectives
+
 In this lab, you will learn to :
 
 * Create Exadata VM Cluster using AWS Console.
@@ -15,23 +16,23 @@ In this lab, you will learn to :
 
 This lab assumes you have:
 
-- Created AWS VPC
-- Created the ODB Network
-- Performed ODB Peering with AWS VPC
-- Created Route Rules for AWS VPC
-- Exadata Cloud Infrastructure resource created
+* Created AWS VPC
+* Created the ODB Network
+* Performed ODB Peering with AWS VPC
+* Created Route Rules for AWS VPC
+* Exadata Cloud Infrastructure resource created
 
-##  Task 1: Create Exadata VM Cluster
+## Task 1: Create Exadata VM Cluster
 
 1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
 
 2. From the left pane, choose **Exadata VM clusters** and click **Create VM cluster**.
 
-   ![](./images/exa-vm-cluster.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-cluster.png "Exadata VM Clusters")
 
 3. For **VM cluster name**, enter **my-vm-cluster**.
 
-   ![](./images/exa-vm-cluster-name.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-cluster-name.png "Exadata VM Clusters")
 
 4. Leave blank for **Grid Infrastructure cluster name** as it is optional.
 
@@ -43,47 +44,47 @@ This lab assumes you have:
 
 8. Configure Exadata infrastructure settings as follows:
 
-   ![](./images/exa-vm-infra-setting.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-infra-setting.png "Exadata VM Clusters")
 
-For Infrastructure, choose the following:
+   For Infrastructure, choose the following:
 
-For **Exadata infrastructure name**, choose the infrastructure created in previous lab **my-exa-infra**.
+   For **Exadata infrastructure name**, choose the infrastructure created in previous lab **my-exa-infra**.
 
-For **Grid Infrastructure version**, select the default value.
+   For **Grid Infrastructure version**, select the default value.
 
-For **Exadata image version**, select the default value.
+   For **Exadata image version**, select the default value.
 
-For **Database servers**, select both database servers to host your VM cluster.
+   For **Database servers**, select both database servers to host your VM cluster.
 
 9. For Configuration, do the following:
 
-   ![](./images/exa-vm-configuration.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-configuration.png "Exadata VM Clusters")
 
-Choose the **OCPU core count**, **Memory**, and **Local storage** for each VM, or accept the defaults.
+   Choose the **OCPU core count**, **Memory**, and **Local storage** for each VM, or accept the defaults.
 
-Choose the total amount of **Exadata storage** for the VM cluster, or accept the default.
+   Choose the total amount of **Exadata storage** for the VM cluster, or accept the default.
 
-For **Storage allocation**, leave all as defaults.
+   For **Storage allocation**, leave all as defaults.
 
-Click **Next**.
+   Click **Next**.
 
 10. Configure connectivity as follows:
 
-   ![](./images/exa-vm-connectivity.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-connectivity.png "Exadata VM Clusters")
 
-For **ODB network**, select the ODB network created earlier - **my-odb-network**.
+   For **ODB network**, select the ODB network created earlier - **my-odb-network**.
 
-For **Host name prefix**, enter a prefix for the VM cluster. Enter **exadb**.
+   For **Host name prefix**, enter a prefix for the VM cluster. Enter **exadb**.
 
-Leave the default value of **1521** for **SCAN listener port (TCP/IP)**.
+   Leave the default value of **1521** for **SCAN listener port (TCP/IP)**.
 
-For SSH key pairs, enter the public key portion of one or more key pairs used for SSH access to the VM cluster.
+   For SSH key pairs, enter the public key portion of one or more key pairs used for SSH access to the VM cluster.
 
-Click **Next**.
+   Click **Next**.
 
 11. Leave all defaults for **Configure diagnostics and tags**. Click **Next**
 
-   ![](./images/exa-vm-configure-diag.png "Exadata VM Clusters")
+   ![Exadata VM Clusters](./images/exa-vm-configure-diag.png "Exadata VM Clusters")
 
 12. Review your settings and click **Create VM cluster**.
 
@@ -91,8 +92,9 @@ You may now **proceed to the next lab**.
 
 ## Learn More
 
-- You can find more information about Oracle Exadata Database@AWS [here](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
+* Official documentation on [Oracle Exadata Database@AWS](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
 
 ## Acknowledgements
+
 * **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
 * **Last Updated By/Date** - Vivek Verma, July 2025

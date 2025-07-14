@@ -16,11 +16,10 @@ In this lab, you will learn to :
 
 This lab assumes you have:
 
-- Created Oracle Exadata Cloud Infrastructure
-- Created Oracle Exadata VM Cluster
+* Created Oracle Exadata Cloud Infrastructure
+* Created Oracle Exadata VM Cluster
 
-
-##  Task 1: Provision Oracle Database
+## Task 1: Provision Oracle Database
 
 1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
 
@@ -30,32 +29,31 @@ This lab assumes you have:
 
 4. Click **Manage in OCI** to be redirected to the Oracle Cloud Infrastructure console.
 
-2. On OCI cloud console, scroll down to **Databases** tab and click on **Create database** button.
+5. On OCI cloud console, scroll down to **Databases** tab and click on **Create database** button.
     It will open a window to create a new database deploymnet - CDB and PDB.
 
-    ![](./images/deploy_db_image2.png " Create database")
+    ![Create database](./images/deploy_db_image2.png)
 
-3. Provide name for the container database(CDB) and unique name, which is optional. 
+6. Provide name for the container database(CDB) and unique name, which is optional. 
 
     We have a choice to select latest version of databases i.e. 19c and 23ai.
 
-    ![](./images/deploy_db_image3.png "DB version details")
+    ![DB version details](./images/deploy_db_image3.png "DB version details")
 
-4. Specify database home, either a new database home or existing one. 
+7. Specify database home, either a new database home or existing one. 
 
-    ![](./images/deploy_db_image5.png " DB home details")
+    ![DB home details](./images/deploy_db_image5.png "DB home details")
   
-5. For database deployment, there are two options for database software image.
+8. For database deployment, there are two options for database software image.
 
     * **Oracle Database Software Images** and
     * **Custom Database Software Images**
 
-    ![](./images/deploy_db_image6.png " Software image")
+    ![Software image](./images/deploy_db_image6.png "Software image")
 
   You can select database version from the available database versions.
 
-    
-    ![](./images/deploy_db_image7.png "DB versions ")
+    ![DB versions](./images/deploy_db_image7.png "DB versions")
 
 6. Provide administrator password for the database. 
 
@@ -67,7 +65,6 @@ This lab assumes you have:
 
     You can eighter use **Autonomous Recovery Service** or an **Object Storage** for the database backups.
 
-
     ![](./images/deploy_db_image9.png " Backups")
 
     * Provide inputs for the database backup retention window. 
@@ -77,7 +74,6 @@ This lab assumes you have:
     * Select schedule for full backup and incremental backup as per requirements. 
 
     * You can also specify to initiate an immediate backup after database is provisioned. 
-
 
     ![](./images/deploy_db_image10.png " Backup options")
 
@@ -103,13 +99,13 @@ This lab assumes you have:
 
 10. After provisioning is completed, you can see the status of CDB and PDB as available. 
 
-
-    ![](./images/deploy_db_image15.png "Provisioing completed ")
+    ![Provisioing completed](./images/deploy_db_image15.png "Provisioing completed")
 
 ## Learn More
 
-- You can find more information about Oracle Exadata Database@AWS [here](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
+* Official documentation on [Oracle Exadata Database@AWS](https://docs.oracle.com/en-us/iaas/Content/database-at-aws/oaaws.htm)
 
 ## Acknowledgements
+
 * **Author** - Vivek Verma, Master Principal Cloud Architect, North America Cloud Engineering
 * **Last Updated By/Date** - Vivek Verma, July 2025
