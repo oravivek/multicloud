@@ -29,7 +29,7 @@ This lab assumes you have:
 
 ## Task 1: Create AWS VPC
 
-1. Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
+1. Launch the [Amazon VPC console](https://console.aws.amazon.com/vpc/).
 
 2. On the VPC dashboard, choose **Create VPC**.
 
@@ -67,7 +67,7 @@ This lab assumes you have:
 
 An ODB network is a private isolated network that hosts OCI infrastructure on AWS. The ODB network maps directly to the network that exists within the OCI child site, thus serving as the means of communication between AWS and OCI.
 
-1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
+1. Launch the [Oracle Database@AWS](https://console.aws.amazon.com/odb/).
 
    ![Oracle Database@AWS Console](./images/oracle-db-at-aws-console.png "Oracle Database@AWS Console")
 

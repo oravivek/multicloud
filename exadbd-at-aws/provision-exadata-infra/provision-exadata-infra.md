@@ -49,7 +49,7 @@ This lab assumes you have:
 
 9. For **Storage servers**, leave the default of 3.
 
-   Each storage server provides 64 TB. The total TB of storage changes as you change the number of servers. 
+   Each storage server provides 64 TB. The total TB of storage changes as you change the number of servers.
 
 10. Click **Next**.
 

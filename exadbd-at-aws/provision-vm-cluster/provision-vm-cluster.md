@@ -24,7 +24,7 @@ This lab assumes you have:
 
 ## Task 1: Create Exadata VM Cluster
 
-1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
+1. Launch the [Oracle Database@AWS console](https://console.aws.amazon.com/odb/).
 
 2. From the left pane, choose **Exadata VM clusters** and click **Create VM cluster**.
 

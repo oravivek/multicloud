@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab walks you through the steps to provision an Oracle Database from OCI console. 
+This lab walks you through the steps to provision an Oracle Database from OCI console.
 
 Estimated Time:  30 Minutes
 
@@ -21,7 +21,7 @@ This lab assumes you have:
 
 ## Task 1: Provision Oracle Database
 
-1. Launch the Oracle Database@AWS console at https://console.aws.amazon.com/odb/.
+1. Launch the [Oracle Database@AWS](https://console.aws.amazon.com/odb/).
 
 2. From the left pane, choose **Exadata VM clusters**.
 
@@ -32,40 +32,40 @@ This lab assumes you have:
 5. On OCI cloud console, scroll down to **Databases** tab and click on **Create database** button.
     It will open a window to create a new database deploymnet - CDB and PDB.
 
-    ![Create database](./images/deploy_db_image2.png)
+    ![Create database](./images/create-database-od-aws.png)
 
-6. Provide name for the container database(CDB) and unique name, which is optional. 
+6. Provide name for the container database(CDB) and unique name, which is optional.
 
     We have a choice to select latest version of databases i.e. 19c and 23ai.
 
-    ![DB version details](./images/deploy_db_image3.png "DB version details")
+    ![DB version details](./images/create-database-db-name.png "DB version details")
 
-7. Specify database home, either a new database home or existing one. 
+7. Specify database home, either a new database home or existing one.
 
-    ![DB home details](./images/deploy_db_image5.png "DB home details")
+    ![DB home details](./images/create-database-db-home.png "DB home details")
   
 8. For database deployment, there are two options for database software image.
 
     * **Oracle Database Software Images** and
     * **Custom Database Software Images**
 
-    ![Software image](./images/deploy_db_image6.png "Software image")
+    ![Software image](./images/create-database-db-home-image.png "Software image")
 
   You can select database version from the available database versions.
 
-    ![DB versions](./images/deploy_db_image7.png "DB versions")
+    ![DB versions](./images/create-database-db-home-version.png "DB versions")
 
-6. Provide administrator password for the database. 
+6. Provide administrator password for the database.
 
     You can use same password for the TDE wallet.
     
-    ![](./images/deploy_db_image8.png "TDE password ")
+    ![Admin credentials](./images/create-database-admin-cred.png "TDE password ")
 
 7. While provisioining database, you have an option to enable automatic backups on the database.  
 
-    You can eighter use **Autonomous Recovery Service** or an **Object Storage** for the database backups.
+    You can either **Amazon S3**, **Autonomous Recovery Service** or **Object Storage** for the database backups.
 
-    ![](./images/deploy_db_image9.png " Backups")
+    ![Backups](./images/create-database-db-backups.png " Backups")
 
     * Provide inputs for the database backup retention window. 
     
@@ -75,31 +75,27 @@ This lab assumes you have:
 
     * You can also specify to initiate an immediate backup after database is provisioned. 
 
-    ![](./images/deploy_db_image10.png " Backup options")
+    ![Backup options](./images/create-database-backup-retention.png "Backup options")
 
-8. In **Advanced-options** you can select, **Character set** and **National character set** if required. 
+8. In **Advanced-options** you can select, **Character set** and **National character set** if required.
 
-    ![](./images/deploy_db_image11.png "DB Character SET ")
+    ![Advanced options](./images/create-database-advanced-options.png "DB Character SET ")
 
     In **Encryption** tab, please select an option for **Oracle-manged** or **Customer-managed keys**.
 
     Data will be encrypted with the key selected in this option. You can select customer-managed keys option , if you wan't to use your own keys for data encryption.
 
+    ![Encryption key](./images/create-database-encryption.png "Encryption key")
 
-    ![](./images/deploy_db_image12.png " Encryption key")
+9. Click **Create** after providing all inputs to deploy CDB and PDB.
 
-9. Click on **Create** button after providing all inputs to deploy CDB and PDB. 
-    You will be able to see the statu as **Provisioining** on cloud console. 
+10. After provisioning is complete, you can see the status of CDB and PDB as available.
 
-    ![](./images/deploy_db_image13.png "DB provisioining status ")
+    ![Provisioing completed](./images/create-database-db-details.png "Provisioing completed")
 
-    Scroll-down and click on the **Log messages** to monitor the work reuest. 
+11. Go to **Pluggable Database** tab to view the Pluggable database.
 
-    ![](./images/deploy_db_image14.png "Log monitoring ")
-
-10. After provisioning is completed, you can see the status of CDB and PDB as available. 
-
-    ![Provisioing completed](./images/deploy_db_image15.png "Provisioing completed")
+    ![PDB Details](./images/create-database-pdb-details.png "PDB Details")
 
 ## Learn More
 

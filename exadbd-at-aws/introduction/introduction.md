@@ -2,7 +2,7 @@
 
 ## Introduction to Oracle Database@AWS
 
-Oracle Database@AWS is an offering that allows Oracle and AWS customers to migrate Oracle Databases, including Oracle Exadata workloads, to Oracle Exadata Database Service on Dedicated Infrastructure and Oracle Autonomous Database Service on Dedicated Exadata Infrastructure within AWS. 
+Oracle Database@AWS is an offering that allows Oracle and AWS customers to migrate Oracle Databases, including Oracle Exadata workloads, to Oracle Exadata Database Service on Dedicated Infrastructure and Oracle Autonomous Database Service on Dedicated Exadata Infrastructure within AWS.
 
 Customers can easily and quickly migrate their workloads with minimal or no database or application changes. Oracle Database@AWS allows you to unify Oracle and AWS data using zero-ETL integrations for access to AWS generative AI, machine learning, and analytics services. You can also benefit from simplified management and operations.
 
@@ -12,7 +12,7 @@ Estimated Workshop Time: 2 Hours 30 Minutes
 
 ## Workshop Objectives
 
-This hands-on workshop provides users with step-by-step instructions on provisioning Oracle Exadata Database@AWS. It provides detailed technical steps about pre-requisites steps and preparation needed for creating an Oracle Exadata infrastructure and Oracle Exadata VM Cluster and then create CDBs and PDBs. 
+This hands-on workshop provides users with step-by-step instructions on provisioning Oracle Exadata Database@AWS. It provides detailed technical steps about pre-requisites steps and preparation needed for creating an Oracle Exadata infrastructure and Oracle Exadata VM Cluster and then create CDBs and PDBs.
 
 Oracle Exadata Database @AWS helps to run Oracle Database natively in AWS with the highest levels of performance, availability, security, and cost-effectiveness available in the cloud.
 
